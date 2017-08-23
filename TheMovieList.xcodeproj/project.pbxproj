@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		754722AEEE1F899EC6E7D879 /* Pods_TheMovieList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FF11C10ABF91130DB74CFC /* Pods_TheMovieList.framework */; };
+		9632BBFF1F4DEFFD00E1D6F0 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9632BBFE1F4DEFFD00E1D6F0 /* MovieDetailsViewController.swift */; };
+		9632BC011F4DF0C800E1D6F0 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9632BC001F4DF0C800E1D6F0 /* Movie.swift */; };
 		96465FCE1F46A074001FB1AB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96465FCD1F46A074001FB1AB /* LoginViewController.swift */; };
 		96465FD01F46A090001FB1AB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96465FCF1F46A090001FB1AB /* SignUpViewController.swift */; };
 		964D8C421F467F6000F084E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964D8C411F467F6000F084E2 /* AppDelegate.swift */; };
@@ -20,6 +22,8 @@
 		0D17BC91BC2872634F7237C8 /* Pods-TheMovieList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheMovieList.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheMovieList/Pods-TheMovieList.release.xcconfig"; sourceTree = "<group>"; };
 		10FF11C10ABF91130DB74CFC /* Pods_TheMovieList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheMovieList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75639E54BD4258546A7B68BD /* Pods-TheMovieList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheMovieList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheMovieList/Pods-TheMovieList.debug.xcconfig"; sourceTree = "<group>"; };
+		9632BBFE1F4DEFFD00E1D6F0 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		9632BC001F4DF0C800E1D6F0 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		96465FCD1F46A074001FB1AB /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		96465FCF1F46A090001FB1AB /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		964D8C3E1F467F6000F084E2 /* TheMovieList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheMovieList.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,6 +63,24 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		9632BC021F4DF0D500E1D6F0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9632BC001F4DF0C800E1D6F0 /* Movie.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		9632BC031F4DF0DC00E1D6F0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				96465FCD1F46A074001FB1AB /* LoginViewController.swift */,
+				96465FCF1F46A090001FB1AB /* SignUpViewController.swift */,
+				9632BBFE1F4DEFFD00E1D6F0 /* MovieDetailsViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		964D8C351F467F6000F084E2 = {
 			isa = PBXGroup;
 			children = (
@@ -80,8 +102,8 @@
 		964D8C401F467F6000F084E2 /* TheMovieList */ = {
 			isa = PBXGroup;
 			children = (
-				96465FCD1F46A074001FB1AB /* LoginViewController.swift */,
-				96465FCF1F46A090001FB1AB /* SignUpViewController.swift */,
+				9632BC021F4DF0D500E1D6F0 /* Models */,
+				9632BC031F4DF0DC00E1D6F0 /* Controllers */,
 				964D8C451F467F6000F084E2 /* Main.storyboard */,
 				964D8C531F467F6E00F084E2 /* Resources */,
 			);
@@ -235,7 +257,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9632BBFF1F4DEFFD00E1D6F0 /* MovieDetailsViewController.swift in Sources */,
 				96465FD01F46A090001FB1AB /* SignUpViewController.swift in Sources */,
+				9632BC011F4DF0C800E1D6F0 /* Movie.swift in Sources */,
 				96465FCE1F46A074001FB1AB /* LoginViewController.swift in Sources */,
 				964D8C421F467F6000F084E2 /* AppDelegate.swift in Sources */,
 			);
